@@ -142,16 +142,8 @@ Our marketing strategies included social media integration, working in unison wi
   ## Let's Connect
 
 # Resume
-  ## Education
-  ### Drexel University, *Philadelphia, PA*
-  - *Degree*: Bachelor of Science in User Experience Interaction Design
-  - *Anticipated Graduation*: June 2028
-  - *Cumulative GPA*: 3.86
-  ## Professional Experience
-  ### Anthropologie, *Philadelphia*
-  *September 2024 - present*
-  Greeting customers upon entry; helping customers select and style products, answering questions, and sharing product knowledge; processing purchases and returns; keeping a tidy, organized store that is to official standards.
-
+  [Resume](https://drive.google.com/file/d/1nyzBhfV6pcAaOoYdeODz5_pqDekdM92e/view?usp=drive_link)
+  
 # Contact
   ## Email
   [ingridgburger@gmail.com](ingridgburger@gmail.com)
