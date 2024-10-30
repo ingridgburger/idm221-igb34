@@ -142,7 +142,7 @@ Our marketing strategies included social media integration, working in unison wi
   ## Let's Connect
 
 # Resume
-  [Resume](https://drive.google.com/file/d/1nyzBhfV6pcAaOoYdeODz5_pqDekdM92e/view?usp=drive_link)
+  [Resume](https://drive.google.com/file/d/1zC4fjdYc4sb7isVRVZM4iK-27fIrj0LP/view?usp=drive_link)
   
 # Contact
   ## Email
