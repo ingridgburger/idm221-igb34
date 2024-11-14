@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue-Regular.woff2') format(woff2); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Regular.woff2') format(woff2);
+    font-weight: 200 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --light-primary:#FFFAF3;
+    --light-secondary:#EBE7E0;
+    --dark-primary:#1A1A1A;
+    --dark-secondary:#424242;
+    --accent-dark:#262E86;
+    --accent-med-dark:#4851B1;
+    --accent-medium:#6A74E1;
+    --accent-med-light:#98A0F8;
+    --accent-light:#C5CAFF;
+
+    --background-color:var(--light-primary);
+    --foreground-color:var(--dark-primary);
+
+    --font-sans-serif: 'Karla', Helvetica, Arial, sans-serif;
+    --font-bold: 'BebasNeue', var(--font-sans-serif);
+
+    --rhythm: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    font-family: var(--font-sans-serif);
+    font-size: 130%;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: var(--dark-primary);
+    color: var(--light-primary);
+    padding: var(--rhythm);
+    text-align: center;
+}
+
+header h1, header h2 {
+    color: var(--light-primary);
+    padding: 0 var(--rhythm);
+}
+
+img {
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: var(--rhythm) auto;
+}
+  
+b {
+    color: var(--accent-primary);
+    font-weight: bold;
+}  
+
+h1, h2, h3 {
+    font-family: var(--font-bold);
+    margin: 0 0 var(--rhythm) 0;
+}
+
+h1 {
+    color: var(--accent-dark);
+    font-size: 65px;
+    letter-spacing: -3px;
+    line-height: 62px;
+    margin-top: var(--rhythm);
+}
+
+h2 {
+    color: var(--accent-med-dark);
+    font-size: 48px;
+    letter-spacing: -2px;
+    line-height: 0.8;
+}
+
+h3 {
+    color: var(--accent-medium);
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 40px;
+}
+
+p {
+    color: var(--dark-primary);
+    font-family: var(--font-sans-serif);
+    font-size: 100%;
+    margin: 0 0 var(--rhythm) 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+section {
+    margin: var(--rhythm) 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
