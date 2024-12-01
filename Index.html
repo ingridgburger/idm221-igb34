@@ -7,46 +7,83 @@
     <link rel="stylesheet" href="css/Stylesheet.CSS">
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container"> 
         <header>
-            <h2>Home</h2>
+            <div class="header-text"><a href="Index.html">IB</a></div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-backdrop"></div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Case_Studies.html">Case Studies</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="About.html">About Me</a></li>
+                </ul>
+            </nav>
         </header>
-        
-        <section>
-            <h1>Hi, my name is Ingrid Burger!</h1>
-        </section>
-        
-        <section>
-            <p>I am a sophomore studying <b>User Experience and Interaction Design</b> at <b>Drexel University</b>.</p>
-            <p>Located in Philadelphia, PA.</p>
-        </section>
+    
+        <main>
+            <section>
+                <img class="profile" alt="Profile Picture" src="./images/Profile_Picture.jpg"/>
+                <h1>Hi, my name is Ingrid Burger!</h1>
+                <p>I am a sophomore studying <b>User Experience and Interaction Design</b> at <b>Drexel University</b>.</p>
+                <p>Located in Philadelphia, PA.</p>
+            </section>
 
-        <section>
-            <h2>Featured Work</h2>
-            <p>A few of my UX/UI design projects showcasing my processes.</p>
-        </section>
+            <section>
+                <h2>Featured Work</h2>
+                <p>A few of my UX/UI design projects showcasing my processes.</p>
+            </section>
 
-        <section>
-            <img alt="Hummus Grill Banner" src="./images/HummusGrillBanner.png"/>
-            <h3>Hummus Grill</h3>
-            <p> Building a modernized, new website for Hummus Grill, a University City mediterranean restaurant.</p>
-        </section>
+            <section class="case-study">
+                <img alt="Hummus Grill Banner" src="./images/HummusGrillBanner.png"/>
+                <h3>Hummus Grill</h3>
+                <p> Building a modernized, new website for Hummus Grill, a University City mediterranean restaurant.</p>
+                <a href="./Hummus_Grill.html">
+                    <button>Read More</button>
+                </a>
+            </section>
 
-        <section>
-            <img alt="Patchwork Banner" src="./images/PatchworkBanner.png"/>
-            <h3>Patchwork</h3>
-            <p>Building a digital experience- through web design and graphics- for a Drexel literary magazine I co-founded, Patchwork.</p>
-        </section>
+            <section class="case-study">
+                <img alt="Patchwork Banner" src="./images/PatchworkBanner.png"/>
+                <h3>Patchwork</h3>
+                <p>Building a digital experience- through web design and graphics- for a Drexel literary magazine I co-founded, Patchwork.</p>
+                <a href="./Patchwork.html">
+                    <button>Read More</button>
+                </a>
+            </section>
 
-        <section>
-            <img alt="Trailster Banner" src="./images/TrailsterBanner.png"/>
-            <h3>Trailster</h3>
-            <p>Rebranding hiking app, AllTrails, into Trailster, and building a new, more immersive mobile interface</p>
-        </section>
+            <section class="case-study">
+                <img alt="Trailster Banner" src="./images/TrailsterBanner.png"/>
+                <h3>Trailster</h3>
+                <p>Rebranding hiking app, AllTrails, into Trailster, and building a new, more immersive mobile interface</p>
+                <a href="./Trailster.html">
+                    <button>Read More</button>
+                </a>
+            </section>
 
-        <section>
-            <p>Go view <a href="case_studies.html">more of my Case Studies</a>.</p>
-        </section>
+            <a href="./Case_Studies.html">
+                <button>View More</button>
+            </a>            
+        </main>
     </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ingridburger/" target="_blank">
+                <img src="./images/Social_Media_Icons/LinkedIn-Icon.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:ingridgburger@gmail.com" target="_blank">
+                <img src="./images/Social_Media_Icons/Gmail-Icon.png" alt="Gmail">
+            </a>
+            <a href="https://www.instagram.com/ingridgbart?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="./images/Social_Media_Icons/Instagram-Icon.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

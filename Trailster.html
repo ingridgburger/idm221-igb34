@@ -9,138 +9,171 @@
 <body>
     <div class="container">
         <header>
-            <h1>Trailster</h1>
+            <div class="header-text"><a href="Index.html">IB</a></div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-backdrop"></div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Case_Studies.html">Case Studies</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="About.html">About Me</a></li>
+                </ul>
+            </nav>
         </header>
+        <main>
+            <section>
+                <h3>Case Study #3:</h3>
+                <h1>Trailster</h1>
 
-        <section>
-            <img alt="Trailster" src="./images/TrailsterBanner.png">
+                <img alt="Trailster" src="./images/TrailsterBanner.png">
 
-            <h2>Introduction</h2>
-            <p>The outdoor recreation industry has seen significant changes in our increasingly digital world. AllTrails offers a comprehensive and personalized recommendation system that has completely transformed the way hikers discover new trails. Its platform allows users to easily bookmark and save their favorite trails while also discovering new adventures. This case study explores my redesign of AllTrails into Trailster, a highly immersive and user-centric version of the hiking app that addresses the evolving needs of modern outdoor enthusiasts.</p>
-        </section>
+                <h2>Introduction</h2>
+                <p>The outdoor recreation industry has seen significant changes in our increasingly digital world. AllTrails offers a comprehensive and personalized recommendation system that has completely transformed the way hikers discover new trails. Its platform allows users to easily bookmark and save their favorite trails while also discovering new adventures. This case study explores my redesign of AllTrails into Trailster, a highly immersive and user-centric version of the hiking app that addresses the evolving needs of modern outdoor enthusiasts.</p>
+            </section>
 
-        <section>
-            <h2>User Research</h2>
-            <p>To gain a more comprehensive understanding of the user being designed for, I began with user research. After looking into Trailster’s primary user bases, I created the following user persona:</p>
-    
-            <img alt="User Persona" src="./images/User_Persona.webp">
+            <section>
+                <h2>User Research</h2>
+                <p>To gain a more comprehensive understanding of the user being designed for, I began with user research. After looking into Trailster’s primary user bases, I created the following user persona:</p>
+        
+                <img alt="User Persona" src="./images/User_Persona.webp">
 
-            <p>Working professionals like Olivia Brookes represent users who seek outdoor escapes but often struggle with decision fatigue from their daily routines. Many in this key audience experience mental exhaustion from work, making it essential to have an interface that helps reduce cognitive load and simplify the process of discovering new trails. These users also value visual appeal and immersive experiences, similar to those found in other popular lifestyle and travel apps they likely use. This research gives way to several key priorities in the redesign: creating a visually appealing interface, streamlining navigation, offering clear information displays, and developing an innovative recommendation system to help users break out of their usual hiking patterns.</p>
-        </section>
+                <p>Working professionals like Olivia Brookes represent users who seek outdoor escapes but often struggle with decision fatigue from their daily routines. Many in this key audience experience mental exhaustion from work, making it essential to have an interface that helps reduce cognitive load and simplify the process of discovering new trails. These users also value visual appeal and immersive experiences, similar to those found in other popular lifestyle and travel apps they likely use. This research gives way to several key priorities in the redesign: creating a visually appealing interface, streamlining navigation, offering clear information displays, and developing an innovative recommendation system to help users break out of their usual hiking patterns.</p>
+            </section>
 
-        <section>   
-            <h2>Goals</h2>
-            <p>In redesigning this app, I focused on two primary goals:
+            <section>   
+                <h2>Goals</h2>
+                <p>In redesigning this app, I focused on two primary goals:
+                    <ol>
+                        <li>Improving the user experience.
+                            <ul>
+                                <li>Implementing an intelligent recommendation system.</li>
+                                <li>Creating a more engaging visual discovery interface.</li>
+                                <li>Reducing cognitive load when using app.</li>
+                            </ul>
+                        <li>Increasing engagement.
+                            <ul>
+                                <li>Designing a more immersive visual experience.</li>
+                                <li>Implementing features that encourage regular use.</li>
+                                <li>Introducing a new feature that gamifies trail selection.</li>
+                            </ul>    
+                        </li>
+                    </ol>
+                </p>
+            </section>
+
+            <section>
+                <h2>Task Flow</h2>
+                <p>For the purpose of this project, I will be focusing on the following task flow:</p>
+
+                <img alt="Task Flow" src="./images/Task Flow.jpg">
+
+                <p><b>Home Screen:</b>
                 <ol>
-                    <li>Improving the user experience.
+                    <li>Explore trails by either:
                         <ul>
-                            <li>Implementing an intelligent recommendation system.</li>
-                            <li>Creating a more engaging visual discovery interface.</li>
-                            <li>Reducing cognitive load when using app.</li>
+                            <li>Using the Trail Generator button for random, personalized trail suggestions</li>
+                            <li>Browsing trails under various categories.</li>
+                            <li>Filtering trails by different factors.</li>
                         </ul>
-                    <li>Increasing engagement.
-                        <ul>
-                            <li>Designing a more immersive visual experience.</li>
-                            <li>Implementing features that encourage regular use.</li>
-                            <li>Introducing a new feature that gamifies trail selection.</li>
-                        </ul>    
-                    </li>
+                    <li>Use the bottom bar to navigate between pages.</li>
                 </ol>
-            </p>
-        </section>
+                </p>
 
-        <section>
-            <h2>Task Flow</h2>
-            <p>For the purpose of this project, I will be focusing on the following task flow:</p>
+                <p><b>Saved Trails:</b>
+                    <ol>
+                        <li>View a list of bookmarked trails.</li>
+                        <li>See key trail details like distance, elevation, and time on each trail card.</li>
+                        <li>Tap the button on the bottom right to access a map view of saved trails.</li>
+                        <li>Tap anywhere on a trail card to go to the trail profile.</li>
+                    </ol>
+                </p>
 
-            <img alt="Task Flow" src="./images/Task Flow.jpg">
+                <p><b>Trail Map:</b>
+                    <ol>
+                        <li>Zoom in or out on the trail map.</li>
+                        <li>Start navigating directly from the map.</li>
+                    </ol>
+                </p>
 
-            <p><b>Home Screen:</b>
-            <ol>
-                <li>Explore trails by either:
-                    <ul>
-                        <li>Using the Trail Generator button for random, personalized trail suggestions</li>
-                        <li>Browsing trails under various categories.</li>
-                        <li>Filtering trails by different factors.</li>
-                    </ul>
-                <li>Use the bottom bar to navigate between pages.</li>
-            </ol>
-            </p>
+                <p><b>Trail Profile:</b>
+                    <ol>
+                        <li>Access trail profiles by tapping trail cards on either the home or saved pages.</li>
+                        <li>View detailed trail information.</li>
+                        <li>Tap "View More" to explore community photos of the trail.</li>
+                        <li>Use the buttons above the navigation bar to download or start the trail.</li>
+                    </ol>
+                </p>
 
-            <p><b>Saved Trails:</b>
-                <ol>
-                    <li>View a list of bookmarked trails.</li>
-                    <li>See key trail details like distance, elevation, and time on each trail card.</li>
-                    <li>Tap the button on the bottom right to access a map view of saved trails.</li>
-                    <li>Tap anywhere on a trail card to go to the trail profile.</li>
-                </ol>
-            </p>
+                <p><b>Photos:</b>
+                    <ol>
+                        <li>Browse a gallery of trail images.</li>
+                        <li>Tap photos to enlarge.</li>
+                        <li>Tap the "Close" button to exit the enlarged view.</li>
+                    </ol>
+                </p>
 
-            <p><b>Trail Map:</b>
-                <ol>
-                    <li>Zoom in or out on the trail map.</li>
-                    <li>Start navigating directly from the map.</li>
-                </ol>
-            </p>
+                <p><b>Trail Activity:</b>
+                    <ol>
+                        <li>Track real-time data like time, distance, speed, and elevation during the trail.</li>
+                        <li>Switch between a basic or detailed view of trail stats.</li>
+                        <li>Pause or stop the activity at any time.</li>
+                    </ol>
+                </p>
 
-            <p><b>Trail Profile:</b>
-                <ol>
-                    <li>Access trail profiles by tapping trail cards on either the home or saved pages.</li>
-                    <li>View detailed trail information.</li>
-                    <li>Tap "View More" to explore community photos of the trail.</li>
-                    <li>Use the buttons above the navigation bar to download or start the trail.</li>
-                </ol>
-            </p>
+                <p>This flow takes the user from trail discovery to saving and viewing trails and finally navigating and tracking a hike.</p>
+            </section>
 
-            <p><b>Photos:</b>
-                <ol>
-                    <li>Browse a gallery of trail images.</li>
-                    <li>Tap photos to enlarge.</li>
-                    <li>Tap the "Close" button to exit the enlarged view.</li>
-                </ol>
-            </p>
+            <section>
+                <h2>Design Choices</h2>
+                
+                <img alt="Design Choices" src="./images/Trailster_Rebrand.png">
 
-            <p><b>Trail Activity:</b>
-                <ol>
-                    <li>Track real-time data like time, distance, speed, and elevation during the trail.</li>
-                    <li>Switch between a basic or detailed view of trail stats.</li>
-                    <li>Pause or stop the activity at any time.</li>
-                </ol>
-            </p>
+                <p><b>Color Scheme:</b> I chose a four-color palette for this interface. I chose two green tones with enough contrast to be clearly distinguishable, which reflect the natural outdoor environment the app represents. Since a key goal was maintaining a simple, clean interface, I limited the vibrant colors to just these two greens. I balanced them with a deep charcoal gray and warm beige for the foundation colors. I specifically chose beige as the primary background color to improve the app's visibility outdoors—since users are often checking trails in bright sunlight, a lighter interface makes the content much easier to read.</p>
+                
+                <p><b>Logo and Iconography:</b> I designed the logo to capture the essence of outdoor adventure, incorporating trees growing from distressed letterforms in the darker green from my color palette. This weathered aesthetic comes through to the iconography to maintain a consistent rugged theme. By contrasting these tough elements with the app's overall clean, modern interface, I created a balanced design that feels both polished and outdoorsy.</p>
+                
+                <p><b>Font Choices:</b></p>
+                <p><i>Headers:</i> Tholoes is a bold capitalized font that stands out as a header and conveys a sense of strength and daring adventure.</p>
+                <p><i>Subheaders:</i> Open Sans Condensed in uppercase is a clean, modern font that maximizes readability while complementing the boldness of the header text.</p>
+                <p><i>Paragraphs</i> DM Sans is contemporary and highly legible, ensuring users can quickly absorb essential trail information.</p>
+            </section>
 
-            <p>This flow takes the user from trail discovery to saving and viewing trails and finally navigating and tracking a hike.</p>
-        </section>
+            <section>
+                <h2>Interaction Guides</h2>
+                <p>For each animation, I made an interaction guide to outline each component.</p>
 
-        <section>
-            <h2>Design Choices</h2>
-            
-            <img alt="Design Choices" src="./images/Trailster_Rebrand.png">
+                <img alt="Lucky Trail Picker" src="./images/Interaction_Guides/Lucky_Trail_Picker_Animations.jpg">
+                <img alt="Trail Profile" src="./images/Interaction_Guides/Trail_Profile_Animations.jpg">
+                <img alt="Favorites Map" src="./images/Interaction_Guides/Favorites_Map_Animations.jpg">
+                <img alt="Navigation" src="./images/Interaction_Guides/Navigation_Animations.jpg">
+            </section>
 
-            <p><b>Color Scheme:</b> I chose a four-color palette for this interface. I chose two green tones with enough contrast to be clearly distinguishable, which reflect the natural outdoor environment the app represents. Since a key goal was maintaining a simple, clean interface, I limited the vibrant colors to just these two greens. I balanced them with a deep charcoal gray and warm beige for the foundation colors. I specifically chose beige as the primary background color to improve the app's visibility outdoors—since users are often checking trails in bright sunlight, a lighter interface makes the content much easier to read.</p>
-            
-            <p><b>Logo and Iconography:</b> I designed the logo to capture the essence of outdoor adventure, incorporating trees growing from distressed letterforms in the darker green from my color palette. This weathered aesthetic comes through to the iconography to maintain a consistent rugged theme. By contrasting these tough elements with the app's overall clean, modern interface, I created a balanced design that feels both polished and outdoorsy.</p>
-            
-            <p><b>Font Choices:</b></p>
-            <p><i>Headers:</i> Tholoes is a bold capitalized font that stands out as a header and conveys a sense of strength and daring adventure.</p>
-            <p><i>Subheaders:</i> Open Sans Condensed in uppercase is a clean, modern font that maximizes readability while complementing the boldness of the header text.</p>
-            <p><i>Paragraphs</i> DM Sans is contemporary and highly legible, ensuring users can quickly absorb essential trail information.</p>
-        </section>
+            <section>
+                <h2>Final Prototype</h2>
+                <p>The final prototype of the app reflects the fun and outdoorsy while also sleek and modern vibe of the Trailster rebrand. Take a look below:</p>
 
-        <section>
-            <h2>Interaction Guides</h2>
-            <p>For each animation, I made an interaction guide to outline each component.</p>
-
-            <img alt="Lucky Trail Picker" src="./images/Interaction_Guides/Lucky_Trail_Picker_Animations.jpg">
-            <img alt="Trail Profile" src="./images/Interaction_Guides/Trail_Profile_Animations.jpg">
-            <img alt="Favorites Map" src="./images/Interaction_Guides/Favorites_Map_Animations.jpg">
-            <img alt="Navigation" src="./images/Interaction_Guides/Navigation_Animations.jpg">
-        </section>
-
-        <section>
-            <h2>Final Prototype</h2>
-            <p>The final prototype of the app reflects the fun and outdoorsy while also sleek and modern vibe of the Trailster rebrand. Take a look below:</p>
-
-            <!--ADD VIDEO HERE-->
-        </section>
+                <!--ADD VIDEO HERE-->
+            </section>
+        </main>
     </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ingridburger/" target="_blank">
+                <img src="./images/Social_Media_Icons/LinkedIn-Icon.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:ingridgburger@gmail.com" target="_blank">
+                <img src="./images/Social_Media_Icons/Gmail-Icon.png" alt="Gmail">
+            </a>
+            <a href="https://www.instagram.com/ingridgbart?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="./images/Social_Media_Icons/Instagram-Icon.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
 </body>
+</html>
