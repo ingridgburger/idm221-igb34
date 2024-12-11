@@ -1,7 +1,7 @@
 /*Fonts*/
 @font-face {
     font-family: 'BowlbyOne';
-    src: url('../fonts/BowlbyOne-Regular.woff2') format(woff2); 
+    src: url('../fonts/BowlbyOne-Regular.woff2') format('woff2'); 
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('../fonts/DMSans-9ptRegular.woff2') format(woff2);
+    src: url('../fonts/DMSans.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('../fonts/DMSans-9ptItalic.woff2') format(woff2);
+    src: url('../fonts/DMSans_Italic.ttf') format('truetype');
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
@@ -46,7 +46,6 @@
     --nav-height: 6rem;
     --menu-icon-color: var(--light-primary);
     --nav-background: var(--accent-dark);
-    --nav-hover-bg: var(--accent-medium);
     --nav-width: 300px;
 }
 
@@ -72,8 +71,17 @@ html, body {
     padding: 0;
 }
 
+li::marker {
+    color: var(--accent-medium);
+}
+
 main {
     padding: 8rem 1rem 4rem;
+}
+
+p + video {
+    margin-top:0.5rem;
+    margin-bottom: 2rem;
 }
 
 section.case-study {
@@ -147,7 +155,6 @@ header h1, header h2 {
     text-decoration: none;
 }
 
-.header-text a:hover,
 .header-text a:focus,
 .header-text a:visited {
     color: var(--light-primary);
@@ -173,11 +180,6 @@ footer {
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.social-links img:hover {
-    transform: scale(1.2);
 }
 
 
@@ -188,8 +190,9 @@ a {
 
 b {
     color: var(--accent-med-dark);
-    font-weight: 600;
+    font-weight: bold;
 }
+
 h1, h2, h3 {
     font-family: var(--font-bold);
     margin: 0 0 0.5rem 0;
@@ -236,9 +239,8 @@ ul li {
 }
 
 /*Button*/
-button {
+.button-link {
     background-color: var(--accent-dark);
-    border: none;
     border-radius: 10px;
     color: var(--light-primary);
     cursor: pointer;
@@ -249,21 +251,12 @@ button {
     margin: 0 auto;
     padding: 1rem 2rem;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-button:hover {
-    background-color: var(--accent-med-dark);
-    transform: scale(1.1);
-}
-
-p + button {
-    margin-top: 0.5rem;
+    text-decoration: none;
 }
 
 /*Images*/
 img {
-    border: 10px solid var(--accent-dark);
+    border: 5px solid var(--accent-dark);
     border-radius: 10px;
     height: auto;
     width: 100%;
@@ -271,9 +264,18 @@ img {
     margin: 0.5rem auto;
 }
 
-img.profile {
-    max-width: 500px;
-    width: 100%;
+/*Videos*/
+video {
+    border: 5px solid var(--accent-dark);
+    border-radius: 10px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+.video-app {
+    border-radius: 40px;
 }
   
 /* Navigation */
@@ -298,10 +300,6 @@ nav li a {
     font-size: 1.25rem;
     padding: 1rem 1.5rem;
     text-decoration: none;
-}
-
-nav li a:hover {
-    background-color: var(--nav-hover-bg);
 }
 
 nav ul {
